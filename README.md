@@ -12,13 +12,15 @@
 本チュートリアルでは以下の順序に沿って行う．
 1. FEMについて学ぶ．
 1. [Setupフォルダ](https://github.com/SolidMechanicsGroup/Tutorial2023/tree/main/FEniCS/setup#readme)を開いて各ツールのセットアップを行う．
-1. [昨年度のチュートリアル](https://github.com/SolidMechanicsGroup/Fenics_yokota)を開いて順に行ってください．昨年度は比較的簡単な解析をいくつか行っています．Windowsのjupyterで順次やっていきましょう．
-1. [Tutorialフォルダ](https://github.com/SolidMechanicsGroup/Tutorial2023/tree/main/FEniCS/tutorial1)を開いてREADMEを読む．その後1stからコードを開きプログラムの意味を理解しながら実行する．
+1. [2年度前のチュートリアル](https://github.com/SolidMechanicsGroup/Fenics_yokota)を開いて順に行ってください．この年はは比較的簡単な解析をいくつか行っています．Windowsのjupyterで順次やっていきましょう．
+1. [昨年度のチュートリアル](https://github.com/SolidMechanicsGroup/Tutorial2023/tree/main/FEniCS/tutorial1)を開いてREADMEを読み，1-1のみを行ってください．
 1. ParaViewで可視化を行い，実際の変形を見る．
+1.[Tutorialフォルダ]を開いて，動的陽解法のコードを実行してみる．
+1.Paraviewで可視化を行い，実際の変形を見る．
 
 かなり，難易度が高いため分からないことがあればすぐ周りの人に聞くようにしましょう．また， __指示通りに進んだのにも関わらず，うまくいかなかったところがあった場合__ や， __指示が分かりにくかった場合__ は __Slackで影山にDM__，もしくは直接聞いてください．
 ## FEMとは？
-[昨年度の合田の論文](https://github.com/SolidMechanicsGroup/Tutorial2023/blob/main/FEniCS/FEM.pdf)でFEMの章があるため読んでください．この章は研究室内にある本（有限要素法概説pp39-56）を参考にしました．分かりにくい場合はそちらの方が図も豊富で理解しやすいと思います．
+[昨年度の影山の論文](https://github.com/SolidMechanicsGroup/FEniCS_Tutorial2024/blob/main/FEniCS/FEM.pdf)でFEMの章があるため読んでください．この章は研究室内にある本（有限要素法概説pp39-56）を参考にしました．分かりにくい場合はそちらの方が図も豊富で理解しやすいと思います．
 
 
 上記を終えてピンと来てない方はFEMのざっくりとしたイメージだけでも掴んで覚えておきましょう．
@@ -27,7 +29,7 @@
 
 ## 力学モデル構築におけるFEniCSの位置付け
 
-なにか力学モデルを構築する際（本チュートリアルではきゅうりの巻きひげが収縮膨張するモデル）の手順は以下の順序で行われる．
+なにか力学モデルを構築する際の手順は以下の順序で行われる．
 
 この流れを理解し， __コードのどの部分が相当する__ か考えながら実行するようにしましょう．
 1. 形状モデルの作成（Rhinoceros,Grasshoper）
